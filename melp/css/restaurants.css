@@ -1,0 +1,93 @@
+.show-page { display: flex !important; }
+.hide-page { display: none !important; }
+
+#restaurants { 
+	height: 200%; 
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#restaurant-container, .page-container {
+	height: 100%;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.restaurants-2 {
+	/*height: 80%;*/
+    padding: 0;
+    margin: 30px;
+    transition: all 0.25s ease;
+}
+
+.restaurants-2:hover {
+	box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.restaurants-2-image:before {
+	position: absolute;
+	color: #000000;
+	font-size: 22px;
+	background-color: rgba(240, 248, 255, 0.65);
+	padding: 0 5px;
+	margin: 0;
+}
+
+/*Adds the stars for rating*/
+.all-star-0:before { content: "☆ ☆ ☆ ☆"; }
+.all-star-1:before { content: "\2605 ☆ ☆ ☆"; }
+.all-star-2:before { content: "\2605 \2605 ☆ ☆"; }
+.all-star-3:before { content: "\2605 \2605 \2605 ☆"; }
+.all-star-4:before { content: "\2605 \2605 \2605 \2605"; }
+
+.description { padding: 10px 0 0 0; }
+.description h4 { margin: 0; }
+
+
+/*Flipper animation*/
+/* entire container, keeps perspective */
+.flip-container { perspective: 1000px; }
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper { transform: rotateY(180deg); }
+
+.flip-container, .front, .back { height: 15%; background: #f5f5f5; }
+
+/* flip speed goes here */
+.flipper {
+	height: 100%;
+	width: 100%;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.front img { height: 100%; width: 100%; }
+
+/* back, initially hidden pane */
+.back { transform: rotateY(180deg); }
+
+@media (max-width: 991px) {
+	.flip-container, .front, .back { width: 100%; }
+}

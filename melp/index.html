@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>Bienvenido a Melp</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/zoomslider.css" rel="stylesheet">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse nav-behave" data-spy="affix" data-offset-top="197">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Melp</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li id="home" class="active" href="#"><a>Inicio</a></li>
+					<li id="load-content"><a href="#">Restaurantes</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="slider" data-zs-src='["img/slider/chairs.jpg", "img/slider/platter.jpg", "img/slider/restaurant.jpg", "img/slider/urban.jpg"]' data-zs-overlay="dots">
+		<div class="slide">
+			<h1><span>Melp</span></h1>
+			<p>Tu mejor opción para encontrar el restaurante ideal</p>
+		</div>
+	</div>
+	<div class="section-title">
+		<p class="subtitle">Nuevos en Melp</p>
+		<h3 class="pr-font">Conócelos</h3>
+	</div>
+	<div id="latest-restaurants" class="container">
+		<div id="latest-restaurant-container" class="row"></div>
+	</div>
+	<div id="restaurants" class="container" style="display: none;">
+		<div id="restaurant-container" class="row">
+			<div id="page-0" class="page-container show-page"></div>
+			<div id="page-1" class="page-container hide-page" style="display: none;"></div>
+			<div id="page-2" class="page-container hide-page" style="display: none;"></div>
+			<div id="page-3" class="page-container hide-page" style="display: none;"></div>
+			<div id="page-4" class="page-container hide-page" style="display: none;"></div>
+			<div id="page-5" class="page-container hide-page" style="display: none;"></div>
+			<div id="page-6" class="page-container hide-page" style="display: none;"></div>
+			<div id="page-7" class="page-container hide-page" style="display: none;"></div>
+			<div id="page-8" class="page-container hide-page" style="display: none;"></div>
+			<div id="page-9" class="page-container hide-page" style="display: none;"></div>
+		</div>
+	</div>
+	<div id="pages" class="container" style="display: none; text-align: center;">
+		<!--<h2>Pagination</h2>
+		<p>The .pagination class provides pagination links:</p>-->
+		<ul class="pagination">
+			<li id="first"><a href="#">&laquo;</a></li>
+			<li id="link-0"><a href="#">1</a></li>
+			<li id="link-1"><a href="#">2</a></li>
+			<li id="link-2"><a href="#">3</a></li>
+			<li id="link-3"><a href="#">4</a></li>
+			<li id="link-4"><a href="#">5</a></li>
+			<li id="link-5"><a href="#">6</a></li>
+			<li id="link-6"><a href="#">7</a></li>
+			<li id="link-7"><a href="#">8</a></li>
+			<li id="link-8"><a href="#">9</a></li>
+			<li id="link-9"><a href="#">10</a></li>
+			<li id="last"><a href="#">&raquo;</a></li>
+		</ul>
+	</div>
+	<div id="map"></div>
+	<footer>
+		<div id="bottom-bar">
+			<div class="center">
+				<p>© 2017 Gustavo Gómez</p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.zoomslider.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> -->
+	<script src="js/data.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBr7LNX9_GKHZ3d9zu7lQ9tAF4pWqjpFPo&callback=initMap" async defer></script>
+</body>
+</html>

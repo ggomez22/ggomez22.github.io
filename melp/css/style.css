@@ -1,0 +1,97 @@
+@import 'latest-restaurants.css';
+@import 'restaurants.css';
+
+html, body {
+	font-family: 'Lato', sans-serif;
+	height: 100%; 
+	margin: 0; 
+	padding: 0; 
+}
+
+header {
+	height: 10%;
+	position: absolute;
+	z-index: 4;
+}
+
+#home, #load-content { cursor: pointer; }
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a { color: #fff; }
+.navbar-brand { font-size: 35px; }
+
+.nav-behave {
+	border-radius: 0;
+	width: 100%;
+	background: none;
+	border: none;
+}
+
+.affix{	background-color: #222; border-color: #080808; }
+
+#slider {
+	/*height: 40%;*/
+	overflow: hidden; /* to bound the empty top space created by inner element's top margin */
+	width: 100%;
+	min-height: 400px;
+	background-color: #999;
+}
+
+.slide {
+	position: relative; /* if position is not set, the script will set it to 'relative'. */
+	z-index: 2; /* if z-index is not set, the script will set it to '2'. */
+	margin: 180px auto;
+	padding: 40px;
+	max-width: 600px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.slide h1 { font-size: 2.5em; margin: 0; }
+.section-title { text-align: center; margin-top: 40px; }
+
+.section-title .subtitle {
+	font-style: italic;
+	line-height: 1;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	color: #D1A054;
+}
+
+.section-title .subtitle:before, .section-title .subtitle:after {
+	content: "";
+	padding: 0 5px;
+	margin: 0 10px;
+	border-bottom: 1px solid;
+	position: relative;
+	bottom: 9px;
+}
+
+.section-title h3 {
+	font-size: 40px;
+	line-height: 50px;
+	text-transform: uppercase;
+	display: inline-block;
+	border-width: 1px 0;
+	border-style: solid;
+	padding: 5px 25px 1px;
+	margin: 0;
+}
+
+#map { height: 45%; }
+
+#bottom-bar {
+	height: 10%;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #222;
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+	box-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+}
+
+.center { display: flex; align-items: center; }
